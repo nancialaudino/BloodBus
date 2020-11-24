@@ -1,8 +1,31 @@
+/* properties base */
+.mainRed{
+
+}
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
-  color: #00B7FF;
+	padding: 1em 2em;
+	background-colour: FireBick; 
+	color: white;
+	margin: 2em 4em;
 }
+
+/* navbar */
+
+nav {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+} 
+
+nav li{
+	float: left;
+}
+nav li:last-child {
+	float: right;
+
+
