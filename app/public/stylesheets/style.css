@@ -25,4 +25,7 @@ nav li {
 	float: left;
 }
 
+nav li:last_child {
+	float: right;
+}
 
