@@ -3,6 +3,8 @@ body {
 	margin: 0;
 	padding: 0;
 	background-color: darkred;
+	position: relative;
+	min-height: 100%;
 }
 
 header{
@@ -58,17 +60,24 @@ main section p{
 main secttion li{
 }
 
+main form{
+	width:
+}
+
 footer{
 	width: 100%;
 	height: 120px;
 	color: white;
 	text-align: center;
+	position: relative;
+	bottom: 0px;
 }
 
 
 footer p{
 	font-size: 20px;
 	padding-top: 2em;
+	margin-top: 0;
 }	
 
 footer p a{
