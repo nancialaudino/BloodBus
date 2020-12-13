@@ -4,7 +4,7 @@ const util = require('util');
 
 var pool = mysql.createPool({
     connectionLimit: 20,
-    host: 'remotemysql.com/databases.php',
+    host: 'remotemysql.com',
     user: 'x0M68E7XtL',
     password: 'RV1xPjLZxN',
     database: 'x0M68E7XtL',
