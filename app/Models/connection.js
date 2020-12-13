@@ -1,13 +1,14 @@
-var mysql = require('mysql');
-var util = require('util');
+const mysql = require('mysql');
+const util = require('util');
 
 
 var pool = mysql.createPool({
     connectionLimit: 20,
     host: 'remotemysql.com/databases.php',
     user: 'x0M68E7XtL',
-    password: 'password',
-    database: 'RV1xPjLZxN'
+    password: 'RV1xPjLZxN',
+    database: 'x0M68E7XtL',
+    port: 3306
 });
 
 

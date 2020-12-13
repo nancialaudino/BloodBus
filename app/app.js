@@ -3,8 +3,9 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-
-var marcacoesRouter = require('./routes/marcacoesRecolha');
+var indexRouter = require('./routes/index');
+var usersRouter = require('./routes/users');
+var marcacoesRouter = require('./routes/marcacoesRouter');
 
 var app = express();
 
@@ -14,7 +15,8 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-
-app.use('/api//marcacoesRecolha', marcacoesRouter);
+app.use('/', indexRouter);
+app.use('/users', usersRouter);
+app.use('/api/marcacoesRecolha', marcacoesRouter);
 
 module.exports = app;

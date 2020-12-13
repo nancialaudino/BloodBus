@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var marcModel = require("/Models/marcacoesModels");
+var marcModel = require("../Models/marcacoesModels");
 
 /* obter todas as marcações */
 router.get('/', async function(req, res, next) {

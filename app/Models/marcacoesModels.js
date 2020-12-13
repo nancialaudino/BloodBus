@@ -2,7 +2,7 @@ var pool = require("./connection");
 
 module.exports.getAll = async function() {
     try {
-        let sql = "select EstadoRecolha.estado as 'Estado da Recolha', Utilizador.nome as 'Dador', Hora.hora as 'Hora da Marcação' from MarcacaoRecolha join EstadoRecolha on MarcacaoRecolha.estado_id=id_estado join Utilizador on MarcacaoRecolha.user_id=id_user join Hora on MarcacaoRecolha.hora_id=id_hora";
+        let sql = "SELECT EstadoRecolha.estado as 'estado', Utilizador.nome as 'dador', Hora.hora as 'hora', EstadoRecolha.id_equipaRecolha as 'equipa' FROM MarcacaoRecolha JOIN EstadoRecolha ON MarcacaoRecolha.estado_id=id_estado JOIN Utilizador ON MarcacaoRecolha.user_id=id_user JOIN Hora ON MarcacaoRecolha.hora_id=id_hora JOIN EquipRecolha ON Hora.equipa_id=EquipaRecolha = id_equipaRecolha;";
         let marcacoes = await pool.query(sql);
         return {status:200, data: marcacoes};
     } catch(err) {
