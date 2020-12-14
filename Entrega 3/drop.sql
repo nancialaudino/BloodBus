@@ -1,0 +1,10 @@
+SET FOREIGN_KEY_CHECKS = 0;
+drop table Categoria_Utilizador;
+drop table Utilizador;
+drop table EstadoRecolha;
+drop table Zona;
+drop table EquipaRecolha;
+drop table Hora;
+drop table FuncionarioRecolha;
+drop table MarcacaoRecolha;
+SET FOREIGN_KEY_CHECKS = 1;
