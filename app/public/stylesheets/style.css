@@ -53,6 +53,20 @@ main section{
 	font-size: 20px;
 }
 
+main table{
+	width: 80%;
+	margin: 0 10%;
+}
+
+main table th{
+	text-align: left;
+	padding: .2em;
+}
+
+main table tr:nth-child(even) {
+	background-color: #dddddd;
+}
+
 main section p{
 	color: black;
 	}
