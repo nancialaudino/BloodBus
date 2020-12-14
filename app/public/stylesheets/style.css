@@ -53,6 +53,20 @@ main section{
 	font-size: 20px;
 }
 
+main table{
+	width: 80%;
+	margin: 0 10%;
+}
+
+main table th{
+	text-align: left;
+	padding: .2em;
+}
+
+main table tr:nth-child(even) {
+	background-color: #dddddd;
+}
+
 main section p{
 	color: black;
 	}
@@ -61,7 +75,32 @@ main secttion li{
 }
 
 main form{
-	width:
+	width: 80%;
+	margin: 0 10%;
+}
+
+main form label{
+	width: 50%;
+	text-align: right;
+	display:inline-block;
+	margin-bottom: 1em;
+}
+main form input, main form select{
+	width:20%;
+	text-align: left;
+	margin-bottom: 1em;
+}
+main form input:last-child{
+	width: initial;
+	background-color: darkred;
+	color: white;
+	padding: 10px 20px;
+	display: flex;
+	justify-content: center;
+	border: none;
+	border-radius: 5px;
+	margin: auto;
+
 }
 
 footer{
