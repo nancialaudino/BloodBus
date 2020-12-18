@@ -15,8 +15,9 @@ async function loadMarcacoes() {
 		}
 		document.getElementById("marcacoes").innerHTML = html;
 	}	catch(err){
-		document.getElementById("marcacoes").innerHTML = "<tr><th<Occureu um problema, se faz favor tentar mais tarde</th></tr>";
 		console.log(err);
+		document.getElementById("marcacoes").innerHTML = "<tr><th<Ocorreu um problema, tente mais tarde!</th></tr>";
+		
 	}
 
 
