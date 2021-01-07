@@ -1,13 +1,15 @@
 /*initate main styles for document*/
 
+
 body {
- 	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+	font-family: 'Roboto', sans-serif;
 	margin: 0;
 	padding: 0;
-	background-color: darkred;
+	background-color:#B22222;
 	position: relative;
 	min-height: 100%;
 }
+
 
 /*header and nav bar*/
 
