@@ -55,6 +55,10 @@ main{
 	background-color: white;
 }
 
+main h2{
+	text-align: center;
+}
+
 main section{
 	padding: 3%;
 	text-align: center;

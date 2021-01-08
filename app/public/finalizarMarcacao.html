@@ -6,6 +6,7 @@
   <title>BloodBus</title>
   <link rel="stylesheet" href="/stylesheets/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -17,15 +18,21 @@
 				<li><a href="informacao.html">Ser Dador</a></li>
 				<li><a href="adminHomePage.html">Marcação</a></li>
 				<li><a href="contactos.html">Contactos</a></li>
-				<li><a href="mapa.html">Mapa</a></li>
 			</ul>
 		</nav>
 	</header> 
 	<main>
-		<section><a href="novaMarcacaoStep1.html">Nova Marcação</a></section>
-		<section><a href="marcacoesRecolha.html">Lista de Marcações</a></section>
-		<section><a href="dadores.html">Lista de Dadores</a></section>
-		
+        <h2>Finalizar Marcação</h2>
+        <form action="adminHomePage.html">
+            <label for="data">Selecionar Data:</label><br>
+            <input type="text" id="data" name="data" ><br>
+            <label for="hora">Hora:</label><br>
+            <input type="text" id="data" name="data"><br><br>
+            <input type="submit" value="Marcar Recolha">
+          </form> 
+
+
+
 	</main>
 	<footer>
 		<p>Ligue para marcar uma recolha <a href="9010101010">(2112312312)</a></p>	
