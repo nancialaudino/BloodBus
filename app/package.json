@@ -6,6 +6,10 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
+    "@angular/animations": "^11.1.0",
+    "@angular/core": "^4.3.6",
+    "@popperjs/core": "^2.6.0",
+    "bootstrap": "^5.0.0-beta1",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "express": "~4.16.1",
@@ -15,5 +19,7 @@
     "stop": "^3.1.0",
     "util": "^0.12.3",
     "utils": "^0.3.1"
+
   }
+ 
 }

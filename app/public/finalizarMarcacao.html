@@ -2,38 +2,46 @@
 <html>
 
 <head>
-  <meta charset="UTF-8" />	
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">	
   <title>BloodBus</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
   <link rel="stylesheet" href="/stylesheets/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="javascripts/finalizarMarcacao.js"></script>
+
 </head>
 
 <body>
 	<header>
-		<nav>
-			<h1 class="logotipo">BloodBus</h1>
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="informacao.html">Ser Dador</a></li>
-				<li><a href="adminHomePage.html">Marcação</a></li>
-				<li><a href="contactos.html">Contactos</a></li>
-			</ul>
-		</nav>
+		<nav class="navbar navbar-light" style="background-color:#dc3545">
+			<div><h1 class="logotipo">BloodBus</h1>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="informacao.html">Ser Dador</a></li>
+					<li><a href="contactos.html">Contactos</a></li>
+					<li><a href="mapa.html">Recolha</a></li>
+					<li><a href="login.html">Login</a></li>
+					
+				</ul>
+			</div>
+	</header>
 	</header> 
 	<main>
         <h2>Finalizar Marcação</h2>
-        <form action="adminHomePage.html">
-            <label for="data">Selecionar Data:</label><br>
-            <input type="text" id="data" name="data" ><br>
-            <label for="hora">Hora:</label><br>
-            <input type="text" id="data" name="data"><br><br>
-            <input type="submit" value="Marcar Recolha">
+        <form >
+			<div><select id="localizacao" name="localizacao"  class="form-select"></select></div>
+			<div><select id="hora" name="hora"  class="form-select"></select></div>
+			<div><select id="estado" name="estado"  class="form-select"></select></div>
+			<div><input type="button" value="Marcar Recolha" class="btn btn-danger" onclick="novaMarcacao()"></div>
           </form> 
 
 
 
 	</main>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
 	<footer>
 		<p>Ligue para marcar uma recolha <a href="9010101010">(2112312312)</a></p>	
 	</footer>

@@ -5,7 +5,6 @@ body {
 	font-family: 'Roboto', sans-serif;
 	margin: 0;
 	padding: 0;
-	background-color:#B22222;
 	position: relative;
 	min-height: 100%;
 }
@@ -17,6 +16,7 @@ header{
 	width: 100%;
 	height: 120px;
 }
+
 
 nav {
 	padding: 20px;
@@ -48,21 +48,32 @@ nav ul li a{
 	text-decoration: none;
 }
 
+
 /*main body*/
 
 main{
-	padding: 5% 0;
+	padding: 2% 0;
 	background-color: white;
 }
 
-main h2{
-	text-align: center;
-}
 
-main section{
+main h2{
 	padding: 3%;
 	text-align: center;
-	font-size: 20px;
+	font-size: 25px;
+}
+
+main section {
+    height: 530px;
+    width: 100%;
+    background:white url(../images/doar.jpg) no-repeat center bottom;
+    position: relative;
+}
+
+main nav {
+	text-align: center;
+	font-size: 30px;
+
 }
 
 main section p{
@@ -81,42 +92,26 @@ main table th{
 }
 
 main table tr:nth-child(even) {
-	background-color: #dddddd;
+	background-color: darkgray;
 }
+
 /* for forms */
 
 main form{
-	width: 80%;
+	width: 60%;
 	margin: 0 10%;
+	padding-left: 20%;
 }
 
 main form label{
 	width: 50%;
-	text-align: right;
+	text-align: left;
 	display:inline-block;
 	margin-bottom: 1em;
 }
 
-main form input, main form select{
-	width:20%;
-	text-align: left;
-	margin-bottom: 1em;
-}
 
-main form input:last-child{ /*REMEMBER, last child of form should ALWAYS be the submit button*/
-	width: initial;
-	background-color: darkred;
-	color: white;
-	padding: 10px 20px;
-	display: flex;
-	justify-content: center;
-	border: none;
-	border-radius: 5px;
-	margin: auto;
-
-}
-
-/* for footer - work needed in justifying its position correctly (i.e should be atthe bottom of the screensize in case screen is larger than page, NOT ABSULUTE)*/
+/* for footer - work needed in justifying its position correctly (i.e should be atthe bottom of the screensize in case screen is larger than page, NOT ABSULUTE) */
 
 footer{
 	width: 100%;
