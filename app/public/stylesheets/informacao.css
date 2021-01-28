@@ -1,10 +1,3 @@
-main h1 {
-    height: 530px;
-    width: 100%;
-    background:white url(../images/doar.jpg) no-repeat center bottom;
-    position: relative;
-}
-
 main h3{
 	
 	width: 100px;
@@ -14,12 +7,16 @@ body {
 	font-family: 'Roboto', sans-serif;
 	margin: 0;
 	padding: 0;
-	background-color: #B22222;
+	
 	position: relative;
     min-height: 100%;
 
 }
 
+main div h2 {
+	text-align: center;
+	height: 100px;
+}
 
 /*header and nav bar*/
 
