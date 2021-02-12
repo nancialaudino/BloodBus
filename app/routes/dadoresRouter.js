@@ -26,6 +26,13 @@ router.post('/', async function(req, res, next) {
   res.status(result.status).send(result.data);
 });
 
+/* Saber as marcações de um certo dador */
+router.get('/:pos/marcacoes', async function(req, res, next) {
+  let pos = req.params.pos;
+  let result = await dadorModel.getMarcacoes(pos);
+  res.status(result.status).send(result.data);
+});
+
 
 module.exports = router;
 

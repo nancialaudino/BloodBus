@@ -13,7 +13,8 @@ async function login() {
             contentType: "application/json"
         });
         sessionStorage.setItem("id_user",utilizador.id_user);
-        alert(JSON.stringify(utilizador))
+        //alert(JSON.stringify(utilizador))
+        alert("Bem-vindo ao BloodBus "+" "+utilizador.nome)
         window.location = "perfilAdmin.html";
     } catch (err) {
         console.log(err);

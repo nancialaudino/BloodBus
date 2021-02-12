@@ -45,3 +45,34 @@ module.exports.novoDador = async function(Utilizador) {
     }
 
 }
+
+module.exports.getMarcacoes = async function(id_dador) {
+    try {
+
+        let sql = "SELECT id_user as 'id', nome, DATE_FORMAT(data_nasc, '%d-%m-%Y') as 'data_nasc', morada, cod_postal, sexo, telefone, email, contribuinte FROM Utilizador WHERE id_user = ? AND categoria_id = 1";
+        let user = await pool.query(sql, [id_dador]);
+        
+        if (user.length > 0) { //se for maior que zero significa que o dador existe
+
+            let infoMarcacoes = user[0];
+
+            sql = "select EstadoRecolha.estado as 'estadoRecolha', DATE_FORMAT(Hora.hora, '%d-%m-%Y %H:%i') as 'horaMarcacao'"
+            + " from MarcacaoRecolha join EstadoRecolha on MarcacaoRecolha.estado_id=id_estado join Utilizador on MarcacaoRecolha.user_id=id_user"
+            +" join Hora on MarcacaoRecolha.hora_id=id_hora where user_id=?";
+            let marcacoes = await pool.query(sql, [id_dador]);
+
+            infoMarcacoes.marcacoes = marcacoes;
+
+            return {status:200, data: infoMarcacoes};
+
+        }
+        else {
+            return {status: 404, data: {msg: "Dador não encontrado!"}};
+        }
+
+    } catch(err) {
+        console.log(err);
+        return {status:500, data: err};
+    }
+
+}
